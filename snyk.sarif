@@ -39,7 +39,6 @@
                   "security",
                   "SNS"
                 ],
-                "documentation": "https://snyk.io/security-rules/SNYK-CC-AWS-422",
                 "problem": {
                   "severity": "low"
                 }
@@ -67,7 +66,6 @@
                   "security",
                   "RDS"
                 ],
-                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-201",
                 "problem": {
                   "severity": "medium"
                 }
@@ -95,7 +93,6 @@
                   "security",
                   "RDS"
                 ],
-                "documentation": "https://snyk.io/security-rules/SNYK-CC-AWS-408",
                 "problem": {
                   "severity": "medium"
                 }
@@ -123,7 +120,6 @@
                   "security",
                   "RDS"
                 ],
-                "documentation": "https://snyk.io/security-rules/SNYK-CC-AWS-414",
                 "problem": {
                   "severity": "medium"
                 }
@@ -151,7 +147,6 @@
                   "security",
                   "RDS"
                 ],
-                "documentation": "https://snyk.io/security-rules/SNYK-CC-AWS-439",
                 "problem": {
                   "severity": "medium"
                 }
@@ -179,7 +174,6 @@
                   "security",
                   "SNS"
                 ],
-                "documentation": "https://snyk.io/security-rules/SNYK-CC-TF-55",
                 "problem": {
                   "severity": "medium"
                 }
