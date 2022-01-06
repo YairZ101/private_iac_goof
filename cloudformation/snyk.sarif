@@ -1,0 +1,372 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "originalUriBaseIds": {
+        "PROJECTROOT": {
+          "uri": "file:///Users/yairzohar/snyk/private_iac_goof/",
+          "description": {
+            "text": "The root directory for all project files."
+          }
+        }
+      },
+      "tool": {
+        "driver": {
+          "name": "Snyk IaC",
+          "fullName": "Snyk Infrastructure as Code",
+          "informationUri": "https://docs.snyk.io/products/snyk-infrastructure-as-code",
+          "rules": [
+            {
+              "id": "SNYK-CC-AWS-422",
+              "name": "SNSTopicIsNotEncryptedWithCustomerManagedKey",
+              "shortDescription": {
+                "text": "Low severity - SNS topic is not encrypted with customer managed key"
+              },
+              "fullDescription": {
+                "text": "Low severity - SNS"
+              },
+              "help": {
+                "text": "The issue is... \nSNS topic is not encrypted with customer managed key\n\n The impact of this is... \n Scope of use of the encryption key cannot be controlled via KMS/IAM policies\n\n You can resolve this by... \nSet `Properties.KmsMasterKeyId` attribute to a customer managed key id ",
+                "markdown": "**The issue is...** \nSNS topic is not encrypted with customer managed key\n\n **The impact of this is...** \n Scope of use of the encryption key cannot be controlled via KMS/IAM policies\n\n **You can resolve this by...** \nSet `Properties.KmsMasterKeyId` attribute to a customer managed key id "
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "SNS"
+                ],
+                "problem": {
+                  "severity": "low"
+                }
+              },
+              "helpUri": "https://snyk.io/security-rules/SNYK-CC-AWS-422"
+            },
+            {
+              "id": "SNYK-CC-TF-201",
+              "name": "NonEncryptedRdsInstanceAtRest",
+              "shortDescription": {
+                "text": "Medium severity - Non-encrypted RDS instance at rest"
+              },
+              "fullDescription": {
+                "text": "Medium severity - RDS"
+              },
+              "help": {
+                "text": "The issue is... \nThe DB instance storage is not encrypted by default\n\n The impact of this is... \n Should someone gain unauthorized access to the data they would be able to read the contents.\n\n You can resolve this by... \nSet `Properties.StorageEncrypted` attribute to `true`",
+                "markdown": "**The issue is...** \nThe DB instance storage is not encrypted by default\n\n **The impact of this is...** \n Should someone gain unauthorized access to the data they would be able to read the contents.\n\n **You can resolve this by...** \nSet `Properties.StorageEncrypted` attribute to `true`"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "RDS"
+                ],
+                "problem": {
+                  "severity": "medium"
+                }
+              },
+              "helpUri": "https://snyk.io/security-rules/SNYK-CC-TF-201"
+            },
+            {
+              "id": "SNYK-CC-AWS-408",
+              "name": "RDSAutomaticBackupIsDisabled",
+              "shortDescription": {
+                "text": "Medium severity - RDS automatic backup is disabled"
+              },
+              "fullDescription": {
+                "text": "Medium severity - RDS"
+              },
+              "help": {
+                "text": "The issue is... \nAutomatic backup of AWS Relational Database is disabled\n\n The impact of this is... \n No automatic backups will occur, availability risk if disaster occurs and manual backups have not been set\n\n You can resolve this by... \nSet `Properties.BackupRetentionPeriod` to `1` or more",
+                "markdown": "**The issue is...** \nAutomatic backup of AWS Relational Database is disabled\n\n **The impact of this is...** \n No automatic backups will occur, availability risk if disaster occurs and manual backups have not been set\n\n **You can resolve this by...** \nSet `Properties.BackupRetentionPeriod` to `1` or more"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "RDS"
+                ],
+                "problem": {
+                  "severity": "medium"
+                }
+              },
+              "helpUri": "https://snyk.io/security-rules/SNYK-CC-AWS-408"
+            },
+            {
+              "id": "SNYK-CC-AWS-414",
+              "name": "RDSIamAuthenticationIsDisabled",
+              "shortDescription": {
+                "text": "Medium severity - RDS IAM authentication is disabled"
+              },
+              "fullDescription": {
+                "text": "Medium severity - RDS"
+              },
+              "help": {
+                "text": "The issue is... \nIAM database authentication is disabled, authentication tokens are not used to connect to DB instance\n\n The impact of this is... \n Users will connect to DB instance with password, which are less secure than temporary tokens which expire\n\n You can resolve this by... \nSet `Properties.EnableIAMDatabaseAuthentication` to `true`.",
+                "markdown": "**The issue is...** \nIAM database authentication is disabled, authentication tokens are not used to connect to DB instance\n\n **The impact of this is...** \n Users will connect to DB instance with password, which are less secure than temporary tokens which expire\n\n **You can resolve this by...** \nSet `Properties.EnableIAMDatabaseAuthentication` to `true`."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "RDS"
+                ],
+                "problem": {
+                  "severity": "medium"
+                }
+              },
+              "helpUri": "https://snyk.io/security-rules/SNYK-CC-AWS-414"
+            },
+            {
+              "id": "SNYK-CC-AWS-439",
+              "name": "RDSClusterDoesNotHaveEncryptionEnabled",
+              "shortDescription": {
+                "text": "Medium severity - RDS cluster does not have encryption enabled"
+              },
+              "fullDescription": {
+                "text": "Medium severity - RDS"
+              },
+              "help": {
+                "text": "The issue is... \nRDS cluster does not have encryption enabled which means data is stored on cluster in plaintext\n\n The impact of this is... \n In the occurrence of a data breach, sensitive data stored on the RDS cluster will be accessible\n\n You can resolve this by... \nSet `Properties.StorageEncrypted` attribute to `true`",
+                "markdown": "**The issue is...** \nRDS cluster does not have encryption enabled which means data is stored on cluster in plaintext\n\n **The impact of this is...** \n In the occurrence of a data breach, sensitive data stored on the RDS cluster will be accessible\n\n **You can resolve this by...** \nSet `Properties.StorageEncrypted` attribute to `true`"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "RDS"
+                ],
+                "problem": {
+                  "severity": "medium"
+                }
+              },
+              "helpUri": "https://snyk.io/security-rules/SNYK-CC-AWS-439"
+            },
+            {
+              "id": "SNYK-CC-TF-55",
+              "name": "NonEncryptedSnsTopic",
+              "shortDescription": {
+                "text": "Medium severity - Non-Encrypted SNS Topic"
+              },
+              "fullDescription": {
+                "text": "Medium severity - SNS"
+              },
+              "help": {
+                "text": "The issue is... \nThe SNS topic is not encrypted at rest\n\n The impact of this is... \n That should someone gain unauthorized access to the data they would be able to read the contents.\n\n You can resolve this by... \nSet `KmsMasterKeyId` attribute to KMS key for example `alias/aws/sns`",
+                "markdown": "**The issue is...** \nThe SNS topic is not encrypted at rest\n\n **The impact of this is...** \n That should someone gain unauthorized access to the data they would be able to read the contents.\n\n **You can resolve this by...** \nSet `KmsMasterKeyId` attribute to KMS key for example `alias/aws/sns`"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "SNS"
+                ],
+                "problem": {
+                  "severity": "medium"
+                }
+              },
+              "helpUri": "https://snyk.io/security-rules/SNYK-CC-TF-55"
+            }
+          ]
+        }
+      },
+      "automationDetails": {
+        "id": "snyk-iac"
+      },
+      "results": [
+        {
+          "ruleId": "SNYK-CC-AWS-422",
+          "level": "warning",
+          "message": {
+            "text": "This line contains a potential low severity misconfiguration affecting the SNS"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "cloudformation/aurora.yml",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 4
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-201",
+          "level": "warning",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the RDS"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "cloudformation/aurora.yml",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 4
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-AWS-408",
+          "level": "warning",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the RDS"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "cloudformation/aurora.yml",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 4
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-AWS-414",
+          "level": "warning",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the RDS"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "cloudformation/aurora.yml",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 4
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-AWS-439",
+          "level": "warning",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the RDS"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "cloudformation/aurora.yml",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 4
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-55",
+          "level": "warning",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the SNS"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "cloudformation/aurora.yml",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 183
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-TF-201",
+          "level": "warning",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the RDS"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "cloudformation/aurora.yml",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 4
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-AWS-408",
+          "level": "warning",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the RDS"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "cloudformation/aurora.yml",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 4
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "SNYK-CC-AWS-414",
+          "level": "warning",
+          "message": {
+            "text": "This line contains a potential medium severity misconfiguration affecting the RDS"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "cloudformation/aurora.yml",
+                  "uriBaseId": "PROJECTROOT"
+                },
+                "region": {
+                  "startLine": 4
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
