@@ -196,7 +196,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "cloudformation/./aurora.yml",
+                  "uri": "cloudformation/aurora.yml",
                   "uriBaseId": "PROJECTROOT"
                 },
                 "region": {
@@ -216,7 +216,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "cloudformation/./aurora.yml",
+                  "uri": "cloudformation/aurora.yml",
                   "uriBaseId": "PROJECTROOT"
                 },
                 "region": {
@@ -236,7 +236,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "cloudformation/./aurora.yml",
+                  "uri": "cloudformation/aurora.yml",
                   "uriBaseId": "PROJECTROOT"
                 },
                 "region": {
@@ -256,7 +256,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "cloudformation/./aurora.yml",
+                  "uri": "cloudformation/aurora.yml",
                   "uriBaseId": "PROJECTROOT"
                 },
                 "region": {
@@ -276,7 +276,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "cloudformation/./aurora.yml",
+                  "uri": "cloudformation/aurora.yml",
                   "uriBaseId": "PROJECTROOT"
                 },
                 "region": {
@@ -296,7 +296,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "cloudformation/./aurora.yml",
+                  "uri": "cloudformation/aurora.yml",
                   "uriBaseId": "PROJECTROOT"
                 },
                 "region": {
@@ -316,7 +316,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "cloudformation/./aurora.yml",
+                  "uri": "cloudformation/aurora.yml",
                   "uriBaseId": "PROJECTROOT"
                 },
                 "region": {
@@ -336,7 +336,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "cloudformation/./aurora.yml",
+                  "uri": "cloudformation/aurora.yml",
                   "uriBaseId": "PROJECTROOT"
                 },
                 "region": {
@@ -356,7 +356,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "cloudformation/./aurora.yml",
+                  "uri": "cloudformation/aurora.yml",
                   "uriBaseId": "PROJECTROOT"
                 },
                 "region": {
