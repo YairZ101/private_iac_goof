@@ -5,7 +5,7 @@
     {
       "originalUriBaseIds": {
         "PROJECTROOT": {
-          "uri": "file:///Users/yairzohar/snyk/private_iac_goof/",
+          "uri": "/home/runner/work/private_iac_goof/private_iac_goof",
           "description": {
             "text": "The root directory for all project files."
           }
