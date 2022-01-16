@@ -41,13 +41,17 @@ jobs:
           # For example `deployment.yaml` for a Kubernetes deployment manifest
           # or `main.tf` for a Terraform configuration file
           file: ./k8s
+          json: true
+          sarif: false
       - name: Upload result to GitHub Code Scanning
         uses: github/codeql-action/upload-sarif@v1
         with:
           sarif_file: snyk.sarif
-      - name: git
+      - name: testing stuff
         run: |
           # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
           cat snyk.sarif
           echo "Repo Root:"
           git rev-parse --show-toplevel
+          echo snyk.json
+          echo snyk.sarif
