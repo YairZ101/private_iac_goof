@@ -52,5 +52,4 @@ jobs:
           cat snyk.sarif
           echo "Repo Root:"
           git rev-parse --show-toplevel
-          echo snyk.json
-          echo snyk.sarif
+          cat snyk.json
